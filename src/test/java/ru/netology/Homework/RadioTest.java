@@ -18,7 +18,7 @@ public class RadioTest {
     @Test
     public void correctMaxCountStation() {
         Radio radio = new Radio(35);
-        int expected = 0;
+        int expected = 30;
         radio.setCurrentStation(expected);
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
@@ -52,7 +52,7 @@ public class RadioTest {
     public void correctStationNumber() {
         Radio radio = new Radio();
 
-        int expected = 6;
+        int expected = 0;
         radio.setCurrentStation(expected);
         int actual = radio.getCurrentStation();
 
